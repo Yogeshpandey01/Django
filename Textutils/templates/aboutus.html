@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!--navbar section-->
+<link rel="stylesheet" href="{% static '/css/CSSFile.css' %}">
+  <section id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="{%static 'images/BMW.png'%}" title="HOME" /></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <a class="nav-link" href="/htmlfile"><strong>Fitness <span style="color:yellow">CLUB</span></strong><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/contactus" tabindex="-1">Contact Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/login" tabindex="-1">Log In</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/signup" tabindex="-1">Sign Up</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Your Diets" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+    </form>
+  </div>
+</nav>
+</section>
+</head>
+
+
+<body>
+<section id="nana">
+<p>
+<h1>ABOUT FITNESS CLUB</h1>
+
+The India chapter of Gold’s Gym started in 2002, when the first Gold’s Gym India branch was set up in Mumbai.
+In the next few years this number grew, and today Gold’s Gym has cut out for itself 120 gyms in
+    India with another 5 under construction and ready to start in this year.
+
+With multiple awards for excellence under its belt including 2 awards from the Lions Club for the “Best Fitness Chain”,
+An award from the Images Beauty & wellness for the Most admired fitness chain of the year”, an award from Franchise India,
+    8 awards from Gold’s Gym International making  it a very eventful 14 years in the growth of the business. Gold’s Gym India has bagged the most prestigious Economic Times ET award for ‘Excellence in Marketing 2013’ & ‘Excellence in Customer Service 2014’.
+
+</p>
+
+<p>
+    Gold’s Gym India is acknowledged for its unrivalled success in providing the finest equipment and fitness knowledge available to help its members achieve their individual potential. It follows a globally proven fitness training module with state-of-the-art infrastructure and delivery methodology and continuous up
+    gradation through training programs. With certified trainers and nutritional counseling, Gold’s Gym provides a comprehensive approach to the health and well-being of its member.
+
+Catering to famous celebrities including film & television personalities, sportspersons & Corporate honchos, Gold’s Gym lives up to its
+    reputation to give results. Whether your goal is to burn fat, tone or add muscle, build strength, increase flexibility or improve your cardiovascular health, only Gold’s Gym has the atmosphere and experience you need.
+</p>
+    <img  src="{%static 'images/rini_das2.jpg'%}" sizes="100%" />
+</section>
+</body>
+</html>

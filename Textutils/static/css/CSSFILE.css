@@ -1,0 +1,134 @@
+.navbar
+{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding:0 !important;
+}
+.navbar-brand img
+{
+    height:60px;
+    padding-left:30px;
+}
+
+#banner
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+    padding-top: 5%;
+}
+
+#photo
+{
+    height:60px;
+    padding-left:30px;
+}
+
+#chatbg
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+    padding-top: 5%;
+}
+
+
+#contactbg
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#conctbg
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.nav
+{
+    height:60px;
+    padding-left:30px;
+}
+
+#nana
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+
+.goto
+{
+  width: 800px;
+  height: 160px;
+  border: 1px solid white;
+}
+
+.goto .contener
+{
+color: #fff;
+-ms-flex: 1;
+ flex: 1;
+ display: flex;
+}
+
+.koto
+{
+  width: 800px;
+  height: 160px;
+  border: 1px solid white;
+}
+
+.koto .cont
+{
+color: #fff;
+-ms-flex: 1;
+ flex: 1;
+ display: flex;
+}
+
+.poto
+{
+  width: 800px;
+  height: 160px;
+  border: 1px solid white;
+}
+
+.poto .conte
+{
+color: #fff;
+-ms-flex: 1;
+ flex: 1;
+ display: flex;
+}
+
+.haha
+{
+  width: 1400px;
+  height: 160px;
+  border: 0px solid white;
+
+}
+
+.haha .roar
+{
+-ms-flex: 1;
+ flex: 1;
+display: flex;
+}
+
+.druide
+{
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+}
+
+.Terms
+{
+    padding-top:3%;
+    background-image: linear-gradient(to right, #48b7c5,#76c9d4);
+    color: #ffff;
+}

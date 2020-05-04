@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+{%load static%}
+  <head>
+    <link rel="stylesheet" href="{% static '/css/CSSFile.css' %}">
+    <!--button for time checking-->
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+    <!--footer-->
+<meta charset="utf-8">
+<title>LoginForm</title>
+<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+.full {
+
+    width: 100%;
+
+}
+
+
+
+.footer {
+
+                height: auto;
+
+                padding-bottom: 30px;
+
+                position: relative;
+
+                width: 100%;
+
+    color:#fff;
+
+                border-bottom: 1px solid #CCCCCC;
+
+                border-top: 1px solid #DDDDDD;
+
+    background: #00003E;
+
+    background: -webkit-linear-gradient(to right, #31BDE6, #00003E);
+
+    background: linear-gradient(to right, #31BDE6, #00003E);
+
+}
+
+
+
+
+
+.footer h3 {
+
+                border-bottom: 1px solid #BAC1C8;
+
+    color:#fff;
+
+                font-size: 18px;
+
+                font-weight: 600;
+
+                line-height: 27px;
+
+                padding: 40px 0 10px;
+
+                text-transform: uppercase;
+
+}
+
+.footer ul {
+
+                font-size: 13px;
+
+                list-style-type: none;
+
+                margin-left: 0;
+
+                padding-left: 0;
+
+                margin-top: 15px;
+
+                color: #7F8C8D;
+
+}
+
+.footer ul li a {
+
+                padding: 0 0 5px 0;
+
+                display: block;
+
+}
+
+.footer a {
+
+                color: #78828D;
+
+    color:#fff;
+
+}
+
+.supportLi h4 {
+
+                font-size: 20px;
+
+                font-weight: lighter;
+
+                line-height: normal;
+
+                margin-bottom: 0 !important;
+
+                padding-bottom: 0;
+
+}
+
+
+
+.subscribe-btn .btn {
+
+                border: medium none;
+
+                border-radius: 4px;
+
+                display: inline-block;
+
+                height: 40px;
+
+                padding-bottom: 60px;
+
+                width: 100%;
+
+                color: #fff;
+
+    margin-top:13px;
+
+
+}
+
+.subscribe-btn {
+
+                overflow: hidden;
+
+}
+
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  padding-left: 14px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding-left: 14px;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding-left: 14px;
+}
+
+
+.footer-bottom {
+
+    background: #40E0D0;
+
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);
+
+                border-top: 1px solid #DDDDDD;
+
+                padding-top: 10px;
+
+                padding-bottom: 60px;
+
+    color:#fff;
+
+}
+
+.footer-bottom p.pull-left {
+
+                padding-top: 6px;
+
+}
+
+.payments {
+
+                font-size: 1.5em;
+
+}
+
+</style>
+  </head>
+  <body>
+  <!--navbar section-->
+  <section id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img src="{% static 'images/BMW.png' %}" title="HOME" /></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <a class="nav-link" href="/htmlfile" title="Home"><strong>Fitness <span style="color:yellow">CLUB</span></strong><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+          <a class="nav-link" href="/aboutus">About Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/contactus" tabindex="-1">Contact Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/login" tabindex="-1">Log In</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/signup" tabindex="-1">Sign Up</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search Your Diets" aria-label="Search">
+      <a class="btn btn-outline-success my-2 my-sm-0" href="https://www.flipkart.com/" target="_top" type="submit" >Search</a>
+    </form>
+  </div>
+</nav>
+</section>
+
+
+  <!--notification section dismiss section-->
+<div class="alert alert-success alert-dismissible  show" role="alert">
+  <strong>Rest a while and run a mile!</strong> If you appreciate quality, then we are for you
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"></span>
+  </button>
+</div>
+
+  <!--navbar below section start from here-->
+  <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Welcome to <strong>GOLD</strong> Gym!</h5>
+      <span class="text-muted">You are at your right way...</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+</div>
+
+
+         <!--banner section-->
+  <section id="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Be the Best</strong></p>
+        <p>Fitness CLUB is one of the pioneers of the health and fitness industry, having
+          opened its first gym 50 years ago in 1965. Having produced some of the most
+          famous bodybuilders of our time, including Arnold Schwarzenegger, Gold’s Gym is one of the most famous establishments worldwide – todays client base is over 3 million people! Golds gym prices are always budget friendly and is a great alternative for those who are serious about the weight lifting aspect of the gym.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="photo">
+      <a href="#"><img  src="{%static 'images/Protein.jpg'%}" sizes="100%" /></a>
+      <a href="#"><img src="{%static 'images/GYm_img.jpg'%}" sizes="100%"/></a>
+  </section>
+
+  <!--paragraph_reader-->
+
+  <div class="container">
+<div class="raw">
+  <!--<strong>-->
+    <strong>
+<div class="column">
+<p>styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.</p>
+</div>
+<div class="column">
+<p>Before you can begin to determine what the composition of a particular paragraph will be, you must first decide on an argument and a working thesis statement for your paper. What is the most important idea that you are trying to convey to your reader? The information in each paragraph must be related to that idea. In other words</p>
+</div>
+<div class="column">
+<p>Paragraph development continues with an expression of the rationale or the explanation that the writer gives for how the reader should interpret the information presented in the idea statement or topic sentence of the paragraph. The writer explains his/her thinking about the main topic, idea, or focus of the paragraph. Here</p>
+</div>
+<div class="row">
+<div class="column">
+<p>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper</p>
+</div>
+<div class="column">
+<p>working thesis functions like a seed from which your paper, and your ideas, will grow. The whole process is an organic one—a natural progression from a seed to a full-blown paper where there are direct, familial relationships between all of the ideas in the paper</p>
+</div>
+<div class="column">
+<p>Paragraph development continues with an expression of the rationale or the explanation that the writer gives for how the reader should interpret the information presented in the idea statement or topic sentence of the paragraph. The writer explains his/her thinking about the main topic, idea, or focus of the paragraph. Here</p>
+
+</div>
+</div>
+        </strong>
+</div>
+
+ </div>
+
+
+  <div>
+    <img  src="{%static 'images/hima_das.jpg'%}" sizes="99%" />
+  </div>
+
+
+  <br>
+
+  <!--cards-->
+  <section class="druide">
+  <section class="about">
+      <div class="container">
+          <div class="content">
+              <div class="box">
+                  <div class="inner">
+                      <div class="img">
+                          <img src="{%static 'images/hritik.jpg'%}" alt="about" />
+                      </div>
+                      <div class="text">
+                          <h4>Best Training</h4>
+                          <p4>Lorem Impus is Lorem Impus is simply yles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what  simply yles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph
+                          </p4>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+              <br>
+              <div class="box">
+                  <div class="inner">
+                      <div class="img">
+                          <img src="{%static 'images/virat_gym_pic.png'%}" alt="about" />
+                      </div>
+                      <div class="text">
+
+                          <h4>Free Consultation</h4>
+                          <p4>Lorem Impus is simply yles Lorem Impus is simply yles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what  of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph
+                          </p4>
+                      </div>
+                  </div>
+              </div>
+              <hr>
+              <br>
+              <div class="box">
+                  <div class="inner">
+                      <div class="img">
+                          <img src="{%static 'images/jhon_cena_gym.png'%}" alt="about" />
+                      </div>
+                      <div class="text">
+                          <h4>Build Perfect Body</h4>
+                          <p4>Lorem Impus is simply yles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls Lorem Impus is simply yles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what  what happens in the rest of the paragraph
+                          </p4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+  </section>
+<br>
+  <!--buttons to check price and time table-->
+
+  <section class="haha" >
+      <div class="container" >
+          <div class="roar">
+  <section class="goto">
+  <div class="container">
+      <div class="contener">
+          <div class="box">
+              <div class="inner">
+      <div class="text" >
+      <h2><strong>Check Your Timing</strong></h2>
+      </div>
+                  <div class="button">
+                      <a href="/Table1"><button  type="button" class="btn btn-outline-primary" >Gym Timing</button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="koto">
+  <div class="container">
+      <div class="cont">
+  <div class="box">
+      <div class="inner">
+          <div class="text">
+    <h2><strong>Check Gym Charges</strong></h2>
+          </div>
+          <div class="button">
+              <button type="button" class="btn btn-outline-info"><a href="/Charges">Charges</a></button>
+          </div>
+      </div>
+  </div>
+      </div>
+  </div>
+  </section>
+
+  <section class="poto">
+  <div class="container">
+      <div class="conte">
+  <div class="box">
+      <div class="inner">
+          <div class="text">
+    <h2><strong>Check Your Diet Plans</strong></h2>
+          </div>
+          <div class="button">
+              <button type="button" class="btn btn-outline-info"><a href="/Dietplan">Diets</a></button>
+          </div>
+      </div>
+  </div>
+      </div>
+  </div>
+  </section>
+      </div>
+      </div>
+  </section>
+
+
+  <!--bottom spiners-->
+<pre>
+
+
+</pre>
+
+
+
+<div class="container" align="center">
+
+  <div class="spinner-grow text-muted"></div>
+  <div class="spinner-grow text-primary"></div>
+  <div class="spinner-grow text-success"></div>
+  <div class="spinner-grow text-info"></div>
+  <div class="spinner-grow text-warning"></div>
+  <div class="spinner-grow text-danger"></div>
+  <div class="spinner-grow text-secondary"></div>
+  <div class="spinner-grow text-dark"></div>
+  <div class="spinner-grow text-light"></div>
+</div>
+</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--footer style-->
+
+
+  <footer>
+
+    <div class="footer" id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+
+                    <h3> Specials</h3>
+
+                    <ul>
+
+                        <li> <a href="#"> Product 1</a> </li>
+
+                        <li> <a href="#"> Product 1 </a> </li>
+
+                        <li> <a href="#"> Product 3 </a> </li>
+
+                        <li> <a href="#"> Product 4 </a> </li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+
+                    <h3> Services </h3>
+
+                    <ul>
+
+                        <li> <a href="#"> Services 1 </a> </li>
+
+                        <li> <a href="#"> Services 2 </a> </li>
+
+                        <li> <a href="#"> Services 3 </a> </li>
+
+                        <li> <a href="#"> Services 4 </a> </li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+
+                    <h3> About </h3>
+
+                    <ul>
+
+                        <li> <a href="#"> Our Company </a> </li>
+
+                        <li> <a href="/aboutus"> About Us </a> </li>
+
+                        <li> <a href="/Terms"> Terms of Services </a> </li>
+
+                        <li> <a href="#"> Our Team </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+
+                    <h3> Contact </h3>
+
+                    <ul>
+
+                        <li> <a href="#"> Contact Marketing </a> </li>
+
+                        <li> <a href="#"> Contact Sales </a> </li>
+
+                        <li> <a href="#"> Contact HR </a> </li>
+
+                        <li> <a href="#"> Contact Admin </a> </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+
+                    <h3> Subscribe Us </h3>
+
+                    <ul>
+
+                        <li>
+
+                            <div class="input-append subscribe-btn text-center">
+
+                                <input type="text" class="full text-center" placeholder="Email ">
+
+                                <button class="btn  btn-success" type="button"> Subscribe <i class="fa fa-save"> </i> </button>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+<pre>
+</pre>
+<form class="box" action="index.html" method="post">
+
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
+</form>
+                </div>
+
+            </div>
+
+            <!--/.row-->
+
+        </div>
+
+        <!--/.container-->
+
+    </div>
+
+    <!--/.footer-->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p class="pull-left"> Copyright © 2004-2018. All rights reserved. </p>
+
+            <div class="pull-right">
+
+                <ul class="nav nav-pills payments">
+
+                    <li>We Accept:  </li>
+
+                    <li><i class="fa fa-cc-paypal"></i></li>
+
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+
+                    <li><i class="fa fa-cc-amex"></i></li>
+
+                    <li><i class="fa fa-cc-visa"></i></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--/.footer-bottom-->
+
+</footer>
+</body>
+</html>
